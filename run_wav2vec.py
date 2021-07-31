@@ -5,9 +5,9 @@ import torchaudio
 
 from utils import split_audio , load_splitted_audio
 
-model_path = r'D:\interviews\fairseq\weights\wav2vec_large.pt'
-f_name = r'D:\interviews\fairseq\audio_file\yash.flac'
-output_path = r'D:\interviews\fairseq\audio_file\splits'
+model_path = 'weights\wav2vec_large.pt'
+f_name = 'audio_file\yash.flac'
+output_path = 'audio_file\splits'
 split_audio(f_name,split_length=78960*3,output_path=output_path)
 audio_tensors = load_splitted_audio(output_path)
 
