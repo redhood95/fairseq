@@ -134,3 +134,12 @@ experimental/*
 
 # Weights and Biases logs
 wandb/
+
+# audio files
+*.flac
+*.mp3
+*.wav
+
+# model weights
+
+*.pt
